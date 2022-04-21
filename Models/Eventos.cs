@@ -241,7 +241,7 @@ public class Events : AgendaElectronica
 
     void MenuPersonalizado(List<List<string>> events)
     {
-        Console.WriteLine($"ID{"",10}Name{"",16}Date{"",12}Time{"",9}place{"",21}");
+        Console.WriteLine($"ID{"",10}Name{"",16}Date{"",16}Time{"",10}place{"",21}");
         Console.WriteLine($"----------  ------------------  ------------------  ------------  ----------------------------");
 
         for (var i = 0; i < events.Count; i++)
