@@ -101,7 +101,8 @@ public class Contactos : AgendaElectronica
         {
             Console.Clear();
 
-            Console.WriteLine("Que deseas modificar del contacto.\n\n1. nombre\n2. apellido\n3. telefono\n4. direccion\n5. email\n6. No modificar");
+            Console.WriteLine(
+                "Que deseas modificar del contacto.\n\n1. nombre\n2. apellido\n3. telefono\n4. direccion\n5. email\n6. No modificar");
 
             option = Console.ReadLine();
             var pos = 0;
@@ -247,19 +248,22 @@ public class Contactos : AgendaElectronica
     void MenuPersonalizado(List<List<string>> contacts)
     {
         Console.WriteLine($"ID{"",10}Name{"",16}LastName{"",12}Phone{"",9}Direccion{"",21}email{"",25}");
-        Console.WriteLine($"----------  ------------------  ------------------  ------------  ----------------------------  ------------------------------");
+        Console.WriteLine(
+            $"----------  ------------------  ------------------  ------------  ----------------------------  ------------------------------");
 
         for (var i = 0; i < contacts.Count; i++)
         {
             if (i % 2 == 0)
             {
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
-                Console.WriteLine($"{contacts[i][0],-12}{contacts[i][1],-20}{contacts[i][2],-20}{contacts[i][3],-14}{contacts[i][4],-30}{contacts[i][5],0}");
+                Console.WriteLine(
+                    $"{contacts[i][0],-12}{contacts[i][1],-20}{contacts[i][2],-20}{contacts[i][3],-14}{contacts[i][4],-30}{contacts[i][5],0}");
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
-                Console.WriteLine($"{contacts[i][0],-12}{contacts[i][1],-20}{contacts[i][2],-20}{contacts[i][3],-14}{contacts[i][4],-30}{contacts[i][5],0}");
+                Console.WriteLine(
+                    $"{contacts[i][0],-12}{contacts[i][1],-20}{contacts[i][2],-20}{contacts[i][3],-14}{contacts[i][4],-30}{contacts[i][5],0}");
             }
             Console.ForegroundColor = ConsoleColor.Gray;
         }

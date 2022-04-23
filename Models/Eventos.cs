@@ -102,7 +102,8 @@ public class Events : AgendaElectronica
         {
             Console.Clear();
 
-            Console.WriteLine("Que deseas modificar del evento.\n\n1. Name\n2. Fecha\n3. Hora\n4. Lugar\n5. No modificar");
+            Console.WriteLine(
+                "Que deseas modificar del evento.\n\n1. Name\n2. Fecha\n3. Hora\n4. Lugar\n5. No modificar");
 
             option = Console.ReadLine();
             var pos = 0;
@@ -242,19 +243,22 @@ public class Events : AgendaElectronica
     void MenuPersonalizado(List<List<string>> events)
     {
         Console.WriteLine($"ID{"",10}Name{"",16}Date{"",16}Time{"",10}place{"",21}");
-        Console.WriteLine($"----------  ------------------  ------------------  ------------  ----------------------------");
+        Console.WriteLine(
+            $"----------  ------------------  ------------------  ------------  ----------------------------");
 
         for (var i = 0; i < events.Count; i++)
         {
             if (i % 2 == 0)
             {
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
-                Console.WriteLine($"{events[i][0],-12}{events[i][1],-20}{events[i][2],-20}{events[i][3],-14}{events[i][4],-30}");
+                Console.WriteLine(
+                    $"{events[i][0],-12}{events[i][1],-20}{events[i][2],-20}{events[i][3],-14}{events[i][4],-30}");
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.DarkYellow;
-                Console.WriteLine($"{events[i][0],-12}{events[i][1],-20}{events[i][2],-20}{events[i][3],-14}{events[i][4],-30}");
+                Console.WriteLine(
+                    $"{events[i][0],-12}{events[i][1],-20}{events[i][2],-20}{events[i][3],-14}{events[i][4],-30}");
             }
             Console.ForegroundColor = ConsoleColor.Gray;
         }
