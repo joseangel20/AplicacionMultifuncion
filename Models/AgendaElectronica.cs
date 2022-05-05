@@ -155,7 +155,6 @@ public class AgendaElectronica
             cmd.Parameters.Add(new SqliteParameter("@id", id));
         else if (nameTable == "events")
             cmd.Parameters.Add(new SqliteParameter("@id", id));
-
         try
         {
             cmd.ExecuteNonQuery();

@@ -9,9 +9,9 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.0-preview.2.22153.1" />
-    <using Include="Microsoft.Data.Sqlite"/>
+    
+<using Include="Microsoft.Data.Sqlite"/>
 
-    <using Remove="System.IO"/>
     <using Remove="System.Linq"/>
     <using Remove="System.Net.Http"/>
     <using Remove="System.Threading"/>

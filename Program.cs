@@ -1,5 +1,4 @@
-﻿
-Principal.MenuPrincipal();
+﻿Principal.MenuPrincipal();
 public class Principal
 {
     public static void MenuPrincipal()

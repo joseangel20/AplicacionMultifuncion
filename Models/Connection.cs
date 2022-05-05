@@ -2,7 +2,6 @@
 public class Connection
 {
     private readonly SqliteConnection _instancia;
-
     public Connection()
     {
         if (_instancia == null)
@@ -12,7 +11,6 @@ public class Connection
             _instancia.Open();
         }
     }
-
     ~Connection()
     {
         _instancia?.Close();
